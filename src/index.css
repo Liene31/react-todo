@@ -17,3 +17,7 @@ header {
     @apply hover:underline hover:underline-offset-6 transition duration-150 ease-in-out;
   }
 }
+
+.btn {
+  @apply bg-main-blue-400 py-1 px-4 rounded-lg no-underline outline-1  ring-2 ring-transparent hover:ring-main-blue-400;
+}

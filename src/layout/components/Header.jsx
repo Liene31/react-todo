@@ -1,3 +1,5 @@
+import { NavLink } from "react-router";
+
 export const Header = () => {
   return (
     <header className="flex justify-between items-center py-4 px-8 bg-main-blue-50">
@@ -12,13 +14,16 @@ export const Header = () => {
       <nav>
         <ul className="flex items-center gap-4 font-bold">
           <li>
-            <a href="">Home</a>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <a href="">Tasks</a>
+            <NavLink to="/tasks">Tasks</NavLink>
           </li>
           <li>
-            <a href="">Pomodoro</a>
+            <NavLink to="/pomodoro">Pomodoro</NavLink>
+          </li>
+          <li className="btn">
+            <NavLink to="/login">Connect</NavLink>
           </li>
         </ul>
       </nav>
