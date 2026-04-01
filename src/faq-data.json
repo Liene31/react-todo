@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "question": "What products or services does your company offer?",
+    "answer": " We provide a range of technology solutions including software platforms, cloud services, and custom development tailored to meet business needs."
+  },
+  {
+    "id": 2,
+    "question": " How can I get started with your platform?",
+    "answer": " You can sign up directly on our website, create an account, and follow the onboarding steps. We also offer guided demos if you prefer assistance."
+  },
+  {
+    "id": 3,
+    "question": "Do you offer a free trial or demo?",
+    "answer": " Yes, we offer a free trial period so you can explore our features before committing. You can also request a live demo with our team."
+  },
+  {
+    "id": 4,
+    "question": "What pricing plans are available?",
+    "answer": "We offer flexible pricing plans based on your needs, including monthly and annual subscriptions. Enterprise plans are also available for larger organizations."
+  },
+  {
+    "id": 5,
+    "question": "How do you ensure data security and privacy?",
+    "answer": " We use industry-standard encryption, secure cloud infrastructure, and comply with global data protection regulations to keep your data safe."
+  },
+  {
+    "id": 6,
+    "question": "What kind of customer support do you provide?",
+    "answer": " We provide 24/7 customer support via email, chat, and phone. Our help center also includes guides, tutorials, and FAQs."
+  },
+  {
+    "id": 7,
+    "question": "Does your platform integrate with other tools?",
+    "answer": "Yes, our platform supports integrations with popular tools such as CRM systems, payment gateways, and productivity apps."
+  },
+  {
+    "id": 8,
+    "question": "How often do you release updates?",
+    "answer": "We regularly release updates to improve performance, fix bugs, and introduce new features—typically on a monthly or quarterly basis."
+  },
+  {
+    "id": 9,
+    "question": " Do you provide onboarding or training?",
+    "answer": "Yes, we offer onboarding sessions, documentation, and training resources to help you and your team get up to speed quickly."
+  },
+  {
+    "id": 10,
+    "question": "How can I contact your team?",
+    "answer": "You can reach us via our website contact form, email, or live chat. Our sales and support teams are always ready to assist you."
+  }
+]
