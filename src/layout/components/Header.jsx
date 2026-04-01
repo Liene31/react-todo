@@ -29,7 +29,10 @@ export const Header = () => {
             <NavLink to="/faq">FAQ</NavLink>
           </li>
           <li className="btn">
-            <NavLink to="/login">Connect</NavLink>
+            <NavLink to="auth/login">Connect</NavLink>
+          </li>
+          <li className="btn">
+            <NavLink to="auth/register">Register</NavLink>
           </li>
         </ul>
       </nav>
