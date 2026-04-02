@@ -13,6 +13,7 @@ export const RegisterForm = () => {
     console.log(data);
     await authService.register(data);
 
+    //navigates back to the home page
     navigate(`/`);
   };
 
@@ -34,7 +35,7 @@ export const RegisterForm = () => {
             id={id + `firstname`}
             type="text"
             className="border"
-            name="firstname"
+            name="firstName"
           />
         </div>
         <div>
@@ -43,7 +44,7 @@ export const RegisterForm = () => {
             id={id + `lastname`}
             type="text"
             className="border"
-            name="lastname"
+            name="lastName"
           />
         </div>
         <div>
