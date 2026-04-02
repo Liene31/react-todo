@@ -20,8 +20,11 @@ export const LoginForm = () => {
 
   return (
     <>
-      <form action={handleLoginSubmit}>
-        <div>
+      <form
+        action={handleLoginSubmit}
+        className="flex flex-col gap-4 items-center"
+      >
+        <div className="flex flex-col font-bold">
           <label htmlFor={id + `email`}>Email</label>
           <input
             id={id + `email`}
@@ -31,7 +34,7 @@ export const LoginForm = () => {
           />
         </div>
 
-        <div>
+        <div className="flex flex-col font-bold">
           <label htmlFor={id + `password`}>Password</label>
           <input
             id={id + `password`}
@@ -41,7 +44,7 @@ export const LoginForm = () => {
           />
         </div>
         <div>
-          <button className="btn" type="submit">
+          <button className="btn font-bold" type="submit">
             Register
           </button>
         </div>
