@@ -4,8 +4,7 @@ import { useAtom } from "jotai";
 import { tokenAtom } from "../../atoms/token.atom.js";
 
 export const LoginForm = () => {
-  const [token, setToken] = useAtom(tokenAtom);
-
+  const [userToken, setUserToken] = useAtom(tokenAtom);
   const id = useId();
   // const navigate = useNavigate();
 
@@ -18,11 +17,13 @@ export const LoginForm = () => {
 
     console.log(response.token);
 
-    setToken(token);
+    setUserToken(response.token);
 
     //   navigates back to the home page
     //   navigate(`/`);
   };
+
+  console.log(userToken);
 
   return (
     <>
