@@ -7,6 +7,7 @@ import { Faq } from "./layout/pages/Faq.jsx";
 import { Home } from "./layout/pages/Home.jsx";
 import { NotFound } from "./layout/pages/NotFound.jsx";
 import { Register } from "./features/auth/pages/Register.jsx";
+import { Login } from "./features/auth/pages/Login.jsx";
 
 /**
  * @type{import "react-router".RouteObject[]}
@@ -28,6 +29,10 @@ export const routes = [
           {
             path: "register",
             element: <Register />,
+          },
+          {
+            path: "login",
+            element: <Login />,
           },
         ],
       },
