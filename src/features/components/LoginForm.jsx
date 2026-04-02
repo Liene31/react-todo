@@ -1,7 +1,11 @@
 import { useId } from "react";
 import { authService } from "../../services/auth.service.js";
+import { useAtom } from "jotai";
+import { tokenAtom } from "../../atoms/token.atom.js";
 
 export const LoginForm = () => {
+  const [token, setToken] = useAtom(tokenAtom);
+
   const id = useId();
   // const navigate = useNavigate();
 
@@ -13,6 +17,8 @@ export const LoginForm = () => {
     const response = await authService.login(data);
 
     console.log(response.token);
+
+    setToken(token);
 
     //   navigates back to the home page
     //   navigate(`/`);
