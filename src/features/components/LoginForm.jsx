@@ -1,12 +1,14 @@
 import { useId } from "react";
 import { authService } from "../../services/auth.service.js";
-import { useAtom } from "jotai";
+import { useAtom, useSetAtom } from "jotai";
 import { tokenAtom } from "../../atoms/token.atom.js";
+import { useNavigate } from "react-router";
 
 export const LoginForm = () => {
-  const [userToken, setUserToken] = useAtom(tokenAtom);
+  // const [userToken, setUserToken] = useAtom(tokenAtom);
+  const setToken = useSetAtom(tokenAtom);
   const id = useId();
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const handleLoginSubmit = async (formData) => {
     console.log(formData);
@@ -17,13 +19,13 @@ export const LoginForm = () => {
 
     console.log(response.token);
 
-    setUserToken(response.token);
+    setToken(response.token);
 
     //   navigates back to the home page
-    //   navigate(`/`);
+    navigate(`/`);
   };
 
-  console.log(userToken);
+  // console.log(userToken);
 
   return (
     <>
@@ -31,7 +33,7 @@ export const LoginForm = () => {
         action={handleLoginSubmit}
         className="flex flex-col gap-4 items-center"
       >
-        <div className="flex flex-col font-bold">
+        <div className="input-form">
           <label htmlFor={id + `email`}>Email</label>
           <input
             id={id + `email`}
@@ -41,7 +43,7 @@ export const LoginForm = () => {
           />
         </div>
 
-        <div className="flex flex-col font-bold">
+        <div className="input-form">
           <label htmlFor={id + `password`}>Password</label>
           <input
             id={id + `password`}

@@ -21,3 +21,11 @@ header {
 .btn {
   @apply bg-main-blue-400 py-1 px-4 rounded-lg no-underline outline-1  ring-2 ring-transparent hover:ring-main-blue-400;
 }
+
+/* .input-field {
+
+} */
+
+.input-form {
+  @apply flex flex-col font-bold;
+}

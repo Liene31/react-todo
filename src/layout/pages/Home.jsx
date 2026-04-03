@@ -1,10 +1,6 @@
 import { Link } from "react-router";
-import { useAtom, useAtomValue } from "jotai";
-import { tokenAtom } from "../../atoms/token.atom.js";
 
 export const Home = () => {
-  const token = useAtomValue(tokenAtom);
-  console.log(token);
   return (
     <>
       <section className="py-12 px-8">

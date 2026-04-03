@@ -23,7 +23,7 @@ export const RegisterForm = () => {
         action={handleRegisterSubmit}
         className="flex flex-col gap-4 items-center"
       >
-        <div className="flex flex-col font-bold">
+        <div className="input-form">
           <label htmlFor={id + `email`}>Email</label>
           <input
             id={id + `email`}
@@ -32,7 +32,7 @@ export const RegisterForm = () => {
             name="email"
           />
         </div>
-        <div className="flex flex-col font-bold">
+        <div className="input-form">
           <label htmlFor={id + `firstname`}>First Name</label>
           <input
             id={id + `firstname`}
@@ -41,7 +41,7 @@ export const RegisterForm = () => {
             name="firstName"
           />
         </div>
-        <div className="flex flex-col font-bold">
+        <div className="input-form">
           <label htmlFor={id + `lastname`}>Last Name</label>
           <input
             id={id + `lastname`}
@@ -50,7 +50,7 @@ export const RegisterForm = () => {
             name="lastName"
           />
         </div>
-        <div className="flex flex-col font-bold">
+        <div className="input-form">
           <label htmlFor={id + `password`}>Password</label>
           <input
             id={id + `password`}
